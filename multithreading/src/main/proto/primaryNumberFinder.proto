@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+  option java_multiple_files = true;
+  option java_package = "ru.mipt.java2017.hw2";
+  option java_outer_classname = "PrimaryNumberFinder";
+
+  package ru.mipt.java2017.sm06;
+
+  service Sender {
+  rpc Send(Request) returns (Reply) {}
+  }
+
+  // The request message containing the user's name.
+  message Request {
+  int64 number = 1;
+  int64 start = 2;
+  int64 end = 3;
+
+  }
+
+  // The response message containing the greetings
+  message Reply {
+  int64 sumOfPrimaryNumbers = 1;
+  }
