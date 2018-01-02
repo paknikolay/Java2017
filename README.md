@@ -1,2 +1,2 @@
 # Java2017
-Java hometasks
+Java hometasks at MIPT
